@@ -34,15 +34,15 @@
 
 $(document).ready(function() {
 
-		
+
 	$('.truth-nav').localScroll({axis:'x', duration:2000, easing:'easeOutExpo'});
 
 
 	var things = $('.panels li');
-	
+
 	$(window).scroll(function() {
 		var offset = window.pageXOffset;
-				
+
 	/* panel-1 */
 		$('.panel-1 h1').css({
 			"left" : (4+(offset/30))+"%"
@@ -50,32 +50,32 @@ $(document).ready(function() {
 		$('.wires').css({
 			"left" : (-0.1+(offset/-40))+"%"
 		});
-	
+
 	/* panel-2 */
 		$('.panel-2 h1').css({
 			"left" : (80+(offset/-26.4))+"%"
 		});
-		
-		
+
+
 	/* panel-3 */
 		$('.panel-3 h1').css({
 			"left" : (80+(offset/-53))+"%"
 		});
-		
+
 	/* panel-4 */
 		$('.panel-4 h1').css({
 			"left" : (80+(offset/-80))+"%"
 		});
-	
+
 	/* panel-5 */
 		$('.panel-5 h1').css({
 			"left" : (80+(offset/-105))+"%"
 		});
 
-		
+
 	});
-	
-	
+
+
 });
 
 
@@ -107,7 +107,7 @@ body {overflow-y: hidden;}
 	background: -moz-linear-gradient(left,  #e8cb32,  #32e8b2);
 	background: -webkit-gradient(linear, left top, right top, from(#e8cb32), to(#32e8b2));
 	overflow: hidden;
-	
+
 /*	background: #e8cb32 url(/assets/post-assets/012-2-truths-1-lie/blend3.png) repeat ;
 	-webkit-animation-name: pan;
 	-webkit-animation-duration: 20s;
@@ -147,7 +147,7 @@ body {overflow-y: hidden;}
 	display: none;
 	}
 
-.truth-nav a {	
+.truth-nav a {
 	display: block;
 	width: 15px;
 	height: 15px;
@@ -158,13 +158,13 @@ body {overflow-y: hidden;}
 	-webkit-transition: all 0.2s ease-in-out;
 	   -moz-transition: all 0.2s ease-in-out;
 	}
-	
-.truth-nav a:hover{	
+
+.truth-nav a:hover{
 	background: #f05a29;
 	}
-	
-	
-	
+
+
+
 /* Moving Elements
 ----------------------------------------------------------------------------------------------------*/
 
@@ -290,59 +290,59 @@ p.lead {
 <ul class="panels">
 
 	<li class="panel-1" id="panel-1">
-	
+
 		<h1><span class="fa">Two&nbsp;Truths,</span><br /><span class="la">One&nbsp;Lie</span></h1>
-		
+
 		<p class="lead">Hey let's play a game, it's a get-to-know-you game. I'll start first. I'll tell you three stories about myself, two of them will be actual events that took place in my life, and one will be a total fabrication. It's up to you to guess which is which.</p>
-		
+
 		<img class="wires wire-trav" src="/assets/post-assets/012-2-truths-1-lie/wire-trav.png" />
-	
+
 	</li>
 	<li class="panel-2" id="panel-2">
-	
+
 		<h1><span class="fa">Story&nbsp;1:</span><br /><span class="la">NES&nbsp;Champ</span></h1>
-		
+
 		<p class="lead">When I was eleven years old I was unstoppable ... in the playing fields of the Nintendo Entertainment System, that is. I was such an accomplished NES gamer that I went to Hollywood to compete in a regional competition. I did well, but ultimately I was eliminated in the Excite Bike round, I remember overheating. I can still see that frustrated, embarrassed little boy. I cried, my mom hugged me.</p>
 
 		<img class="wires wire-nes" src="/assets/post-assets/012-2-truths-1-lie/wire-nes.png" />
 
-	
+
 	</li>
 	<li class="panel-3" id="panel-3">
-	
+
 		<h1><span class="fa">Story&nbsp;2:</span><br /><span class="la">Gone&nbsp;Fishing</span></h1>
-		
+
 		<p class="lead">When I was in highschool my buddy and I thought it a good idea to skateboard into town in our underwear and use fishing poles to catch lunch in the public fountains ... at 2AM. We drew maps on our bodies with permanent marker of where we had been so we wouldn't get lost. We had a blast until the cops showed up. There, in our underwear, in handcuffs, they photographed us (not restraining their laughter) and called our parents to come get us. We were still very hungry.</p>
 
 		<img class="wires wire-hands" src="/assets/post-assets/012-2-truths-1-lie/wire-hands.png" />
 
-	
+
 	</li>
 	<li class="panel-4" id="panel-4">
-	
+
 		<h1><span class="fa">Story&nbsp;3:</span><br /><span class="la">Big&nbsp;Money&nbsp;Makeout</span></h1>
-		
+
 		<p class="lead">When I was younger I got a job selling electronics. It was fun and it paid (what I considered at the time) very well. I took my first paycheck (over one thousand big ones!) to the bank, and cashed it ... all in singles. I carried around a backpack full of 1,000 one-dollar bills for a while and convinced my girlfriend (who is now my wife) to roll around in it with me. We made out in a pile of money for over two hours. The newly minted ones were uncomfortable, and the old ones smelt nasty.</p>
 
 		<img class="wires wire-money" src="/assets/post-assets/012-2-truths-1-lie/wire-money2.png" />
 
-	
+
 	</li>
 	<li class="panel-5" id="panel-5">
-	
+
 		<h1><span class="fa">And&nbsp;Now...</span><br /><span class="la">Your&nbsp;Answer?</span></h1>
-		
+
 		<p class="lead">All right, these are my three stories. I had a blast reminiscing on (and making up) some of the more interesting events in my life. And now its time for you to guess which were true, and what one was a lie. Answer in the comments to the right...</p>
 
 
 
 		<img class="wires wire-frame" src="/assets/post-assets/012-2-truths-1-lie/wire-frame.png" />
-	
-	
+
+
 	<div class="comments-wrap">
 		<?php// comments_template(); ?>
-	
-	
+
+
 	<div id="disqus_thread"></div>
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
@@ -361,22 +361,15 @@ p.lead {
 </script>
 <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
-	
-	
-	
+
+
+
 	</div>
-	
-	
+
+
 	</li>
 
 </ul>
-
-
-
-
-
-
-
 
 </div>
 
