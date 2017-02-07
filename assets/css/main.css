@@ -767,7 +767,8 @@ section.articles {
     transition: all 200ms ease-in-out;
     opacity: 0; }
     section.articles .article-meta .name {
-      font-size: 18px; }
+      font-size: 18px;
+      line-height: 1.2; }
     section.articles .article-meta .date {
       font-style: italic; }
   section.articles .article-thumb:hover .article-meta {
