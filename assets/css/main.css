@@ -544,7 +544,7 @@ body {
     text-indent: 101%;
     white-space: nowrap;
     max-width: 135px;
-    background-image: url(/assets/img/logo-tn.svg);
+    background-image: url(../../assets/img/logo-tn.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -734,6 +734,47 @@ section.mentoring {
     box-sizing: border-box;
     margin-left: 0px; } }
 
+section.articles {
+  background-image: url(../img/article-bg.jpg);
+  background-repeat: repeat; }
+  section.articles .home-cta {
+    color: white;
+    background: #3d96cb; }
+  section.articles .article-thumb {
+    display: block;
+    background-size: cover;
+    background-position: center;
+    width: 25%;
+    float: left;
+    position: relative;
+    overflow: hidden; }
+    section.articles .article-thumb:after {
+      content: '';
+      display: block;
+      padding-top: 100%;
+      position: relative; }
+  section.articles .article-meta {
+    position: absolute;
+    color: white;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(61, 150, 203, 0.7);
+    padding: 10px;
+    -webkit-transform: translate(0%, 100%) scale(0.5);
+            transform: translate(0%, 100%) scale(0.5);
+    transition: all 200ms ease-in-out;
+    opacity: 0; }
+    section.articles .article-meta .name {
+      font-size: 18px; }
+    section.articles .article-meta .date {
+      font-style: italic; }
+  section.articles .article-thumb:hover .article-meta {
+    opacity: 1;
+    -webkit-transform: translate(0%, 0%) scale(1);
+            transform: translate(0%, 0%) scale(1); }
+
 section.youtube {
   background-image: url(../img/youtube-bg.gif);
   background-position: center;
@@ -758,7 +799,7 @@ section.youtube {
     height: calc(100% + 100px);
     background-image: url(../img/video-strip.png);
     background-position: center 0px;
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     background-size: 70%; }
     @media (max-width: 640px) {
       section.youtube .video-strip {
